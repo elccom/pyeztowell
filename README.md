@@ -1,6 +1,6 @@
 # 공통 라이브러리 (Swagger 참조 REST API 공통화)
 
-`http://localhost:3001/manual.json` Swagger(OpenAPI) 문서를 참조해,
+`http://localhost:3001/api-docs.json` Swagger(OpenAPI) 문서를 참조해,
 공통 라이브러리 안에 **실제 API 메서드 코드**를 생성하고,
 다른 프로그램에서 import 해서 재사용하는 목적의 패키지입니다.
 
@@ -10,34 +10,37 @@
 pip install -e .
 ```
 
-## 1) Swagger로 공통 API 클래스 생성
+## 1) Swagger로 라우터별 공통 함수 파일 생성
 
 ```bash
 generate-common-api \
-    --spec-url http://localhost:3001/manual.json \
-    --output elcsoft/generated/manual_api.py \
-    --class-name ManualApiClient
+    --spec-url http://localhost:3001/api-docs.json \
+    --output-dir elcsoft
 ```
 
-생성 결과: `elcsoft/generated/manual_api.py`
+생성 결과 예시:
 
-- Swagger의 각 엔드포인트(operationId 우선)를 Python 메서드로 생성
-- 생성 메서드는 내부적으로 공통 HTTP 로직(`SwaggerClient`)을 사용
+- `elcsoft/users.py`
+- `elcsoft/orders.py`
+
+- Swagger의 각 엔드포인트를 router(tag)별 파일에 함수로 생성
+- 각 함수는 내부적으로 공통 HTTP 로직(`SwaggerClient.call`)을 호출
 
 ## 2) 생성된 공통 API를 다른 프로그램에서 사용
 
 ```python
-from elcsoft.generated.manual_api import ManualApiClient
+from elcsoft import SwaggerClient
+from elcsoft import users
 
-client = ManualApiClient(
-        spec_url="http://localhost:3001/manual.json",
+client = SwaggerClient(
+    spec_url="http://localhost:3001/api-docs.json",
         base_url="http://localhost:3001",
         bearer_token="YOUR_TOKEN",  # 필요 시
 )
 
-# 생성된 메서드 이름 예시 (실제 이름은 Swagger 문서 기반)
-# result = client.get_users(query_params={"page": 1})
-# result = client.create_user(json_body={"name": "Kim"})
+# 생성된 함수 예시 (실제 이름은 Swagger 문서 기반)
+# result = users.get_users(client, query_params={"page": 1})
+# result = users.create_user(client, json_body={"name": "Kim"})
 ```
 
 ## 공통 로직(기반 클래스) 기능
