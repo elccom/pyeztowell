@@ -3,7 +3,7 @@ requires = ["setuptools>=68", "wheel"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "elcsoft library"
+name = "elcsoft-library"
 version = "0.1.0"
 description = "Swagger/OpenAPI 기반 공통 REST API 라이브러리 및 코드 생성기"
 readme = "README.md"
