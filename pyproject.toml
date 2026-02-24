@@ -14,6 +14,7 @@ dependencies = [
 
 [project.scripts]
 generate-common-api = "codegen.generator:main"
+release-common-api = "codegen.release_helper:main"
 
 [tool.setuptools]
 packages = ["elcsoft", "elcsoft.core", "codegen"]

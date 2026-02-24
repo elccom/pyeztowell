@@ -54,3 +54,17 @@ client = SwaggerClient(
 
 현재 에이전트 세션에서는 `localhost:3001` 접근이 불가할 수 있으므로,
 생성/실행은 사용자 로컬 환경에서 실행해 주세요.
+
+## 릴리스 자동화
+
+다음 버전 릴리스(버전 업데이트, 릴리스 노트 반영, 커밋/태그/푸시)를 한 번에 실행:
+
+```bash
+release-common-api --bump patch --summary "router 변경 반영"
+```
+
+실행 계획만 확인:
+
+```bash
+release-common-api --bump patch --summary "router 변경 반영" --dry-run
+```
