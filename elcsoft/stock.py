@@ -51,6 +51,138 @@ def get_stock(
         timeout=timeout,
     )
 
+def get_stock_guide_apis(
+    client: SwaggerClient,
+    *,
+    path_params: Optional[Dict[str, Any]] = None,
+    query_params: Optional[Dict[str, Any]] = None,
+    headers: Optional[Dict[str, str]] = None,
+    json_body: Optional[Any] = None,
+    data: Optional[Any] = None,
+    timeout: Optional[int] = None,
+) -> Any:
+    """GET /stock/guide/apis"""
+    return client.call(
+        method="GET",
+        path="/stock/guide/apis",
+        path_params=path_params,
+        query_params=query_params,
+        headers=headers,
+        json_body=json_body,
+        data=data,
+        timeout=timeout,
+    )
+
+def get_stock_institutional_foreign_net_buy(
+    client: SwaggerClient,
+    *,
+    path_params: Optional[Dict[str, Any]] = None,
+    query_params: Optional[Dict[str, Any]] = None,
+    headers: Optional[Dict[str, str]] = None,
+    json_body: Optional[Any] = None,
+    data: Optional[Any] = None,
+    timeout: Optional[int] = None,
+) -> Any:
+    """GET /stock/institutional/foreign/net-buy"""
+    return client.call(
+        method="GET",
+        path="/stock/institutional/foreign/net-buy",
+        path_params=path_params,
+        query_params=query_params,
+        headers=headers,
+        json_body=json_body,
+        data=data,
+        timeout=timeout,
+    )
+
+def get_stock_institutional_foreign_net_sell(
+    client: SwaggerClient,
+    *,
+    path_params: Optional[Dict[str, Any]] = None,
+    query_params: Optional[Dict[str, Any]] = None,
+    headers: Optional[Dict[str, str]] = None,
+    json_body: Optional[Any] = None,
+    data: Optional[Any] = None,
+    timeout: Optional[int] = None,
+) -> Any:
+    """GET /stock/institutional/foreign/net-sell"""
+    return client.call(
+        method="GET",
+        path="/stock/institutional/foreign/net-sell",
+        path_params=path_params,
+        query_params=query_params,
+        headers=headers,
+        json_body=json_body,
+        data=data,
+        timeout=timeout,
+    )
+
+def get_stock_institutional_institution_net_buy(
+    client: SwaggerClient,
+    *,
+    path_params: Optional[Dict[str, Any]] = None,
+    query_params: Optional[Dict[str, Any]] = None,
+    headers: Optional[Dict[str, str]] = None,
+    json_body: Optional[Any] = None,
+    data: Optional[Any] = None,
+    timeout: Optional[int] = None,
+) -> Any:
+    """GET /stock/institutional/institution/net-buy"""
+    return client.call(
+        method="GET",
+        path="/stock/institutional/institution/net-buy",
+        path_params=path_params,
+        query_params=query_params,
+        headers=headers,
+        json_body=json_body,
+        data=data,
+        timeout=timeout,
+    )
+
+def get_stock_institutional_institution_net_sell(
+    client: SwaggerClient,
+    *,
+    path_params: Optional[Dict[str, Any]] = None,
+    query_params: Optional[Dict[str, Any]] = None,
+    headers: Optional[Dict[str, str]] = None,
+    json_body: Optional[Any] = None,
+    data: Optional[Any] = None,
+    timeout: Optional[int] = None,
+) -> Any:
+    """GET /stock/institutional/institution/net-sell"""
+    return client.call(
+        method="GET",
+        path="/stock/institutional/institution/net-sell",
+        path_params=path_params,
+        query_params=query_params,
+        headers=headers,
+        json_body=json_body,
+        data=data,
+        timeout=timeout,
+    )
+
+def get_stock_institutional_stock_stock_code(
+    client: SwaggerClient,
+    *,
+    path_params: Optional[Dict[str, Any]] = None,
+    query_params: Optional[Dict[str, Any]] = None,
+    headers: Optional[Dict[str, str]] = None,
+    json_body: Optional[Any] = None,
+    data: Optional[Any] = None,
+    timeout: Optional[int] = None,
+) -> Any:
+    """GET /stock/institutional/stock/{stockCode}"""
+    return client.call(
+        method="GET",
+        path="/stock/institutional/stock/{stockCode}",
+        path_params=path_params,
+        query_params=query_params,
+        headers=headers,
+        json_body=json_body,
+        data=data,
+        timeout=timeout,
+    )
+
 def get_stock_last_market_code(
     client: SwaggerClient,
     *,
@@ -139,6 +271,28 @@ def get_stock_master_search(
         timeout=timeout,
     )
 
+def get_stock_methods(
+    client: SwaggerClient,
+    *,
+    path_params: Optional[Dict[str, Any]] = None,
+    query_params: Optional[Dict[str, Any]] = None,
+    headers: Optional[Dict[str, str]] = None,
+    json_body: Optional[Any] = None,
+    data: Optional[Any] = None,
+    timeout: Optional[int] = None,
+) -> Any:
+    """GET /stock/methods"""
+    return client.call(
+        method="GET",
+        path="/stock/methods",
+        path_params=path_params,
+        query_params=query_params,
+        headers=headers,
+        json_body=json_body,
+        data=data,
+        timeout=timeout,
+    )
+
 def get_stock_naver_code(
     client: SwaggerClient,
     *,
@@ -183,6 +337,72 @@ def get_stock_naver_search_keyword(
         timeout=timeout,
     )
 
+def get_stock_program_buy_top(
+    client: SwaggerClient,
+    *,
+    path_params: Optional[Dict[str, Any]] = None,
+    query_params: Optional[Dict[str, Any]] = None,
+    headers: Optional[Dict[str, str]] = None,
+    json_body: Optional[Any] = None,
+    data: Optional[Any] = None,
+    timeout: Optional[int] = None,
+) -> Any:
+    """GET /stock/program/buy-top"""
+    return client.call(
+        method="GET",
+        path="/stock/program/buy-top",
+        path_params=path_params,
+        query_params=query_params,
+        headers=headers,
+        json_body=json_body,
+        data=data,
+        timeout=timeout,
+    )
+
+def get_stock_program_sell_top(
+    client: SwaggerClient,
+    *,
+    path_params: Optional[Dict[str, Any]] = None,
+    query_params: Optional[Dict[str, Any]] = None,
+    headers: Optional[Dict[str, str]] = None,
+    json_body: Optional[Any] = None,
+    data: Optional[Any] = None,
+    timeout: Optional[int] = None,
+) -> Any:
+    """GET /stock/program/sell-top"""
+    return client.call(
+        method="GET",
+        path="/stock/program/sell-top",
+        path_params=path_params,
+        query_params=query_params,
+        headers=headers,
+        json_body=json_body,
+        data=data,
+        timeout=timeout,
+    )
+
+def get_stock_program_stock_trend_stock_code(
+    client: SwaggerClient,
+    *,
+    path_params: Optional[Dict[str, Any]] = None,
+    query_params: Optional[Dict[str, Any]] = None,
+    headers: Optional[Dict[str, str]] = None,
+    json_body: Optional[Any] = None,
+    data: Optional[Any] = None,
+    timeout: Optional[int] = None,
+) -> Any:
+    """GET /stock/program/stock-trend/{stockCode}"""
+    return client.call(
+        method="GET",
+        path="/stock/program/stock-trend/{stockCode}",
+        path_params=path_params,
+        query_params=query_params,
+        headers=headers,
+        json_body=json_body,
+        data=data,
+        timeout=timeout,
+    )
+
 def get_stock_query_type_code_trading_date(
     client: SwaggerClient,
     *,
@@ -197,6 +417,28 @@ def get_stock_query_type_code_trading_date(
     return client.call(
         method="GET",
         path="/stock/query/{type}/{code}/{trading_date}",
+        path_params=path_params,
+        query_params=query_params,
+        headers=headers,
+        json_body=json_body,
+        data=data,
+        timeout=timeout,
+    )
+
+def get_stock_ranking_fall(
+    client: SwaggerClient,
+    *,
+    path_params: Optional[Dict[str, Any]] = None,
+    query_params: Optional[Dict[str, Any]] = None,
+    headers: Optional[Dict[str, str]] = None,
+    json_body: Optional[Any] = None,
+    data: Optional[Any] = None,
+    timeout: Optional[int] = None,
+) -> Any:
+    """GET /stock/ranking/fall"""
+    return client.call(
+        method="GET",
+        path="/stock/ranking/fall",
         path_params=path_params,
         query_params=query_params,
         headers=headers,
@@ -241,6 +483,94 @@ def get_stock_ranking_losers_type(
     return client.call(
         method="GET",
         path="/stock/ranking/losers/{type}",
+        path_params=path_params,
+        query_params=query_params,
+        headers=headers,
+        json_body=json_body,
+        data=data,
+        timeout=timeout,
+    )
+
+def get_stock_ranking_market_cap(
+    client: SwaggerClient,
+    *,
+    path_params: Optional[Dict[str, Any]] = None,
+    query_params: Optional[Dict[str, Any]] = None,
+    headers: Optional[Dict[str, str]] = None,
+    json_body: Optional[Any] = None,
+    data: Optional[Any] = None,
+    timeout: Optional[int] = None,
+) -> Any:
+    """GET /stock/ranking/market-cap"""
+    return client.call(
+        method="GET",
+        path="/stock/ranking/market-cap",
+        path_params=path_params,
+        query_params=query_params,
+        headers=headers,
+        json_body=json_body,
+        data=data,
+        timeout=timeout,
+    )
+
+def get_stock_ranking_rise(
+    client: SwaggerClient,
+    *,
+    path_params: Optional[Dict[str, Any]] = None,
+    query_params: Optional[Dict[str, Any]] = None,
+    headers: Optional[Dict[str, str]] = None,
+    json_body: Optional[Any] = None,
+    data: Optional[Any] = None,
+    timeout: Optional[int] = None,
+) -> Any:
+    """GET /stock/ranking/rise"""
+    return client.call(
+        method="GET",
+        path="/stock/ranking/rise",
+        path_params=path_params,
+        query_params=query_params,
+        headers=headers,
+        json_body=json_body,
+        data=data,
+        timeout=timeout,
+    )
+
+def get_stock_ranking_transaction_amount(
+    client: SwaggerClient,
+    *,
+    path_params: Optional[Dict[str, Any]] = None,
+    query_params: Optional[Dict[str, Any]] = None,
+    headers: Optional[Dict[str, str]] = None,
+    json_body: Optional[Any] = None,
+    data: Optional[Any] = None,
+    timeout: Optional[int] = None,
+) -> Any:
+    """GET /stock/ranking/transaction-amount"""
+    return client.call(
+        method="GET",
+        path="/stock/ranking/transaction-amount",
+        path_params=path_params,
+        query_params=query_params,
+        headers=headers,
+        json_body=json_body,
+        data=data,
+        timeout=timeout,
+    )
+
+def get_stock_ranking_volume(
+    client: SwaggerClient,
+    *,
+    path_params: Optional[Dict[str, Any]] = None,
+    query_params: Optional[Dict[str, Any]] = None,
+    headers: Optional[Dict[str, str]] = None,
+    json_body: Optional[Any] = None,
+    data: Optional[Any] = None,
+    timeout: Optional[int] = None,
+) -> Any:
+    """GET /stock/ranking/volume"""
+    return client.call(
+        method="GET",
+        path="/stock/ranking/volume",
         path_params=path_params,
         query_params=query_params,
         headers=headers,
@@ -337,6 +667,116 @@ def get_stock_stock_id(
         timeout=timeout,
     )
 
+def get_stock_theme_by_stock_stock_code(
+    client: SwaggerClient,
+    *,
+    path_params: Optional[Dict[str, Any]] = None,
+    query_params: Optional[Dict[str, Any]] = None,
+    headers: Optional[Dict[str, str]] = None,
+    json_body: Optional[Any] = None,
+    data: Optional[Any] = None,
+    timeout: Optional[int] = None,
+) -> Any:
+    """GET /stock/theme/by-stock/{stockCode}"""
+    return client.call(
+        method="GET",
+        path="/stock/theme/by-stock/{stockCode}",
+        path_params=path_params,
+        query_params=query_params,
+        headers=headers,
+        json_body=json_body,
+        data=data,
+        timeout=timeout,
+    )
+
+def get_stock_theme_hot(
+    client: SwaggerClient,
+    *,
+    path_params: Optional[Dict[str, Any]] = None,
+    query_params: Optional[Dict[str, Any]] = None,
+    headers: Optional[Dict[str, str]] = None,
+    json_body: Optional[Any] = None,
+    data: Optional[Any] = None,
+    timeout: Optional[int] = None,
+) -> Any:
+    """GET /stock/theme/hot"""
+    return client.call(
+        method="GET",
+        path="/stock/theme/hot",
+        path_params=path_params,
+        query_params=query_params,
+        headers=headers,
+        json_body=json_body,
+        data=data,
+        timeout=timeout,
+    )
+
+def get_stock_theme_list(
+    client: SwaggerClient,
+    *,
+    path_params: Optional[Dict[str, Any]] = None,
+    query_params: Optional[Dict[str, Any]] = None,
+    headers: Optional[Dict[str, str]] = None,
+    json_body: Optional[Any] = None,
+    data: Optional[Any] = None,
+    timeout: Optional[int] = None,
+) -> Any:
+    """GET /stock/theme/list"""
+    return client.call(
+        method="GET",
+        path="/stock/theme/list",
+        path_params=path_params,
+        query_params=query_params,
+        headers=headers,
+        json_body=json_body,
+        data=data,
+        timeout=timeout,
+    )
+
+def get_stock_theme_ranking(
+    client: SwaggerClient,
+    *,
+    path_params: Optional[Dict[str, Any]] = None,
+    query_params: Optional[Dict[str, Any]] = None,
+    headers: Optional[Dict[str, str]] = None,
+    json_body: Optional[Any] = None,
+    data: Optional[Any] = None,
+    timeout: Optional[int] = None,
+) -> Any:
+    """GET /stock/theme/ranking"""
+    return client.call(
+        method="GET",
+        path="/stock/theme/ranking",
+        path_params=path_params,
+        query_params=query_params,
+        headers=headers,
+        json_body=json_body,
+        data=data,
+        timeout=timeout,
+    )
+
+def get_stock_theme_stocks_theme_code(
+    client: SwaggerClient,
+    *,
+    path_params: Optional[Dict[str, Any]] = None,
+    query_params: Optional[Dict[str, Any]] = None,
+    headers: Optional[Dict[str, str]] = None,
+    json_body: Optional[Any] = None,
+    data: Optional[Any] = None,
+    timeout: Optional[int] = None,
+) -> Any:
+    """GET /stock/theme/stocks/{themeCode}"""
+    return client.call(
+        method="GET",
+        path="/stock/theme/stocks/{themeCode}",
+        path_params=path_params,
+        query_params=query_params,
+        headers=headers,
+        json_body=json_body,
+        data=data,
+        timeout=timeout,
+    )
+
 def patch_stock_stock_id_deactivate(
     client: SwaggerClient,
     *,
@@ -395,6 +835,50 @@ def post_stock_bulk(
     return client.call(
         method="POST",
         path="/stock/bulk",
+        path_params=path_params,
+        query_params=query_params,
+        headers=headers,
+        json_body=json_body,
+        data=data,
+        timeout=timeout,
+    )
+
+def post_stock_call(
+    client: SwaggerClient,
+    *,
+    path_params: Optional[Dict[str, Any]] = None,
+    query_params: Optional[Dict[str, Any]] = None,
+    headers: Optional[Dict[str, str]] = None,
+    json_body: Optional[Any] = None,
+    data: Optional[Any] = None,
+    timeout: Optional[int] = None,
+) -> Any:
+    """POST /stock/call"""
+    return client.call(
+        method="POST",
+        path="/stock/call",
+        path_params=path_params,
+        query_params=query_params,
+        headers=headers,
+        json_body=json_body,
+        data=data,
+        timeout=timeout,
+    )
+
+def post_stock_guide_call(
+    client: SwaggerClient,
+    *,
+    path_params: Optional[Dict[str, Any]] = None,
+    query_params: Optional[Dict[str, Any]] = None,
+    headers: Optional[Dict[str, str]] = None,
+    json_body: Optional[Any] = None,
+    data: Optional[Any] = None,
+    timeout: Optional[int] = None,
+) -> Any:
+    """POST /stock/guide/call"""
+    return client.call(
+        method="POST",
+        path="/stock/guide/call",
         path_params=path_params,
         query_params=query_params,
         headers=headers,
