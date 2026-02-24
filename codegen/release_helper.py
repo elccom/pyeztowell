@@ -44,11 +44,13 @@ def _update_pyproject_version(pyproject_path: Path, next_version: str) -> None:
     content = pyproject_path.read_text(encoding="utf-8")
     updated = re.sub(
         r'(^version\s*=\s*")([0-9]+\.[0-9]+\.[0-9]+)("\s*$)',
-        rf"\\g<1>{next_version}\\g<3>",
+        lambda match: f"{match.group(1)}{next_version}{match.group(3)}",
         content,
         count=1,
         flags=re.MULTILINE,
     )
+    if updated == content:
+        raise ValueError("pyproject.toml의 version 항목 업데이트에 실패했습니다.")
     pyproject_path.write_text(updated, encoding="utf-8")
 
 
